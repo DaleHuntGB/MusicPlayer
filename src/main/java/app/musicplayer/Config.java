@@ -40,5 +40,7 @@ public final class Config {
 
     static {
         PREFERENCES.setValue("volume", 50.0);
+        PREFERENCES.setValue("stageW", 1280);
+        PREFERENCES.setValue("stageH", 720);
     }
 }

@@ -98,6 +98,16 @@ public class FXGLMusicApp extends Application {
             log.info("Closing stage");
             FXGL.getGameController().exit();
         });
+        // Draw `stage` to the height/width stated.
+        stage.setWidth(PREFERENCES.getInt("stageW"));
+        stage.setHeight(PREFERENCES.getInt("stageH"));
+        // Listener to check for size changes, apply size to preferences.
+        stage.widthProperty().addListener((o, oldW, newW) -> {
+            PREFERENCES.setValue("stageW", newW.intValue());
+        });
+        stage.heightProperty().addListener((o, oldH, newH) -> {
+            PREFERENCES.setValue("stageH", newH.intValue());
+        });
 
         Scene scene = new Scene(view);
         scene.getStylesheets().add(FXGL.getAssetLoader().loadCSS("Global.css").getExternalForm());

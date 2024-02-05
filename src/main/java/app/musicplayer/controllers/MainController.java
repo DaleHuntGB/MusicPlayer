@@ -154,7 +154,7 @@ public class MainController implements Initializable, PlaylistViewController.Pla
             song.setArtwork(image);
         });
 
-        onEvent(NAGIVATE_TO_SONG, event -> {
+        onEvent(NAVIGATE_TO_SONG, event -> {
             PlaylistAndSong data = (PlaylistAndSong) event.getData();
 
             songTableViewController.setPlaylist(data.playlist());

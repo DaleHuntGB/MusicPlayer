@@ -317,7 +317,7 @@ public final class MediaPaneController implements Initializable {
         if (!isReady)
             return;
 
-        fire(new UserDataEvent<>(NAGIVATE_TO_SONG, new PlaylistAndSong(playlist, song)));
+        fire(new UserDataEvent<>(NAVIGATE_TO_SONG, new PlaylistAndSong(playlist, song)));
     }
 
     private void seek(int seconds) {

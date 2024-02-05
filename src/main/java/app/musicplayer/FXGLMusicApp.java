@@ -27,7 +27,7 @@ import static app.musicplayer.Config.*;
 
 // TODO: serialization version for future updates
 // TODO: light and dark themes
-// TODO: remember stage width height
+// TODO: remember stage width height - DONE
 // TODO: remember last played song
 // TODO: update to high res app icon
 // TODO: consider free streaming music API online

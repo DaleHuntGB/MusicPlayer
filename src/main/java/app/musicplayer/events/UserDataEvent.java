@@ -20,7 +20,7 @@ public class UserDataEvent<T> extends UserEvent {
 
     public static final EventType<UserDataEvent<?>> PLAY_SONG = new EventType<>(ANY, "PLAY_SONG_DATA_EVENT");
     public static final EventType<UserDataEvent<?>> LOAD_SONG_ARTWORK = new EventType<>(ANY, "LOAD_SONG_ARTWORK_DATA_EVENT");
-    public static final EventType<UserDataEvent<?>> NAGIVATE_TO_SONG = new EventType<>(ANY, "NAGIVATE_TO_SONG_DATA_EVENT");
+    public static final EventType<UserDataEvent<?>> NAVIGATE_TO_SONG = new EventType<>(ANY, "NAVIGATE_TO_SONG_DATA_EVENT");
 
     private T data;
 
